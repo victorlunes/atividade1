@@ -6,15 +6,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inputs basicos</title>
 </head>
-<body>
-    <h1>Inputs basicos</h1>
+<style>
+    section {
+        background-color: red; border: 1;
+    }
+</style>
 
-    <form action="imputs_basicos.html" method="post">
-        <label> Nome</label> 
-        <input type="text" name="nome" />
+<body>
+    <section> 
+        <center>
+   <h1>Inputs basicos</h1> 
+    <form action="https://www.globo.com" method="post">
+        <label for=""> 
+            <font color="red"> <sup>*</sup> </font>insira seu nome
+        </label> 
+        <input placeholder="Insira seu nome" type="text" name="nome" /><br>
 
         <label>Senha</label>
-        <input type="password" name="senha">
+        <input placeholder="Insira sua senha" type="password" name="senha">
+        </center>
+    </section>
+
+         <br>
+
+        <label>times</label>
+        <input type="text" placeholder="Insira seu time" name="time" list="lista_de_time">
+        <datalist id="lista_de_time">
+            <option value="Corinthians">Corinthians</option>
+            <option value="São Paulo">São Paulo</option>
+            <option value="Flamengo">Flamengo</option>
+        </datalist> <br>
+        
 
         <label>Opções</label>
         <input type="radio" name="Opções">A
@@ -26,14 +48,36 @@
         <input type="checkbox" name="multiplo" >mascu <br/>
 
         <label>Texto</label>
-        <textarea name="TExto" id="" cols="30" rows="10"></textarea>
+        <textarea name="TExto" id="" cols="30" rows="10"></textarea><br>
 
         <label>Arquivo</label>
-        <input type="file" name="Arquivo">
+        <input type="file" name="Arquivo"><br>
         
-        
+        <label>sexo</label>
+        <select name="sexo" id="">
+            <option value="">selecione</option>
+            <option value="Masculino">Masculino</option>
+            <option selected value="feminino">feminino</option>
+        </select><br><br>
+
+        <label>Comidas</label>
+        <select name="Comidas" id="">
+            <optgroup label="Comidas Brasileiras">
+                <option value="Feijoada">Feijoada</option>
+                <option value="Feijão de corda">Feijão de corda</option>
+                <option value="Tapioca">Tapioca</option>
+            </optgroup>
+            <optgroup label="Comidas Japonesas">
+                <option value="Sushi">Sushi</option>
+                <option value="Yakisoba">Yakisoba</option>
+                <option value="Agua quente">Agua quente</option>
+            </optgroup>s
+        </select>
+
+        <input type="button" value="botão sem ação">
+
+        <input type="submit" value="enviar">
 
     </form>
-    
 </body>
 </html>
