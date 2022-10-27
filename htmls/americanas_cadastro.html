@@ -5,99 +5,100 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Americanas</title>
+    <link rel="stylesheet" href=".americanas.css">
 </head>
 <body>
+    <!--logo-->
+    <header class="logo">
+        <img src="data:image/png;base64,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"
+        alt="logo americanas" height="85" width="200" >
+    </header>
      <!--topo--> 
     <div> 
-        <center><h1>Criar seu cadastro</h1>
-        <h3>veja seus pedidos de forma fácil, compre mais rápido e tenha uma <br> experiência personalizada :)</h3><br>
-        <p><label for="asteristico">*</label>campo obrigatorio</p></center>
+        <h1 class="criar_cadastro" >
+        criar seu cadastro</h1>
+        <p class="descrisão" >veja seus pedidos de forma fácil, compre mais rápido e tenha uma <br> experiência personalizada :)
+        </p>
+        <p class="campo_obrigatorio" >
+            <span class="asteristico">*</span>
+            campos obrigatórios
+        </p>
     </div>
-    <!--fecha topo--> 
+    <!--fecha topo-->
     <!--formualrio-->
-<section>
-    <form action="">
-        <div> 
-        <!--nome-->
-            <center><h3><label for="asteristico">*</label>nome completo</h3>
-            <input placeholder="Digite seu nome" type="text" name="nome" class="" id=""><br><br>
-        <!--fecha nome-->
+<section >
+    <form class="formulario" >
+        <div class="nome"> 
+            <span class="asteristico">*</span>
+            <label class="nomecompleto">nome completo</label>
+            <input type="text" name="input_de_texto" class="input_nome" id=""><br><br>
         </div>
-        <!--gênero-->
+<!--gênero-->
         <div>
-            <center>
-                <h3><label for="asteristico">*</label>gênero</h3>
-                <p>pra gente te conhecer um pouquinho melhor :)</p>
-                <input type="radio" name="gênero" id="">Feminino
-                <input type="radio" name="gênero" id="" class="">Masculino
-                <input type="radio" name="gênero" id="" class=""> não informar
-            </center>
+            <span class="asteristico">*</span>
+            <label>Gênero</label>
+            <p>pra gente te conhecer um pouquinho melhor :)</p>
+            <input type="radio" name="gênero" id="">Feminino
+            <input type="radio" name="gênero" id="" class="">Masculino
+            <input type="radio" name="gênero" id="" class=""> não informar     
         </div>
-        <!--fecha gênero-->
-        <!--data de nascimento-->
-        <div>
-            <center>
-                <h3><label for="asteristico">*</label>data de nascimento</h3>
-                <p>necessário pra identificar a maioridade, no formato DD/MM/AAAA</p>
-                <input type="date" name="data" id="" class=""><br><br>
-            </center>
+<!--fecha gênero-->
+<!--data de nascimento-->
+        <div>        
+            <span class="asteristico">*</span>
+            <label>data de nascimento</label>
+            <p>necessário pra identificar a maioridade, no formato DD/MM/AAAA</p>
+            <input type="date" name="data" id="" class=""><br><br>
         </div>
-        <!--fecha data de nascimento-->
-        <!--abre cpf-->
+<!--fecha data de nascimento-->
+<!--abre cpf-->
         <div>
-            <center>
-                <h3><label for="asteristico">*</label>CPF</h3>
-                <p>necessário pra emissão das Notas Fiscais</p>
-                <input type="tel" name="cpf" id="" placeholder="__/__/__/__/___/">
-                <p><a href="juridica.html" target="_blank">é pessoa jurídica? conheça a americanas empresas</a></p>
-            </center>
+            <span class="asteristico">*</span>
+            </label>CPF</label>
+            <p>necessário pra emissão das Notas Fiscais</p>
+            <input type="tel" name="cpf" id="" placeholder="__/___/___/___/___/">
+            <p><a href="juridica.html" target="_blank">é pessoa jurídica? conheça a americanas empresas</a></p>
         </div>
         <!--fecha cpf-->
         <!--telefone-->
         <div>
-            <center>
-                <h3><label for="asteristico">*</label>telefone</h3>
-                <p>caso a gente precise entrar em contato sobre seus pedidos</p>
-                <input type="tel" name="telefone" id="" class=""><br>
-                <input type="checkbox" name="whatsapp" id="" class="">receber notificações por whatsapp
-            </center>
+            <span class="asteristico">*</span>
+            <label>telefone</label>
+            <p>caso a gente precise entrar em contato sobre seus pedidos</p>
+            <input type="tel" name="telefone" id="" class=""><br>
+            <input type="checkbox" name="whatsapp" id="" class="">receber notificações por whatsapp
         </div>
         <!--fecha telefone-->
         <!--abre email-->
         <div>
-            <center>
-                <h3><label for="asteristico">*</label>email</h3>
-                <input type="email" name="email" id="" class=""><br>
-                <input type="checkbox" name="receber email" id="" class="">receber e-mails promocionais
-            </center>
+            <span class="asteristico">*</span>
+            <label>email</label>
+            <input type="email" name="email" id="" class=""><br>
+            <input type="checkbox" name="receber email" id="" class="">receber e-mails promocionais
         </div>
         <!--fecha email-->
         <!--abre senha-->
         <div>
-            <center>
-                <h3><label for="asteristico">*</label>senha</h3>
-                <p>precisa ter entre 6 e 20 caracteres</p>
-                <div>
-                    <input type="password" name="senha" id="" class=""><br>
-                    <input type="checkbox" name="compartilhar dados" id="" class="">compartilhar meus dados com parceiros para ter <br>
-                    conteúdos personalizados,veja <a href="dados.html" target="_blank">como funciona</a>
-                </div>
-            </center>
+            <span class="asteristico">*</span>
+            <label>senha</label>
+            <p>precisa ter entre 6 e 20 caracteres</p>
+            <div>
+                <input type="password" name="senha" id="" class=""><br>
+                <input type="checkbox" name="compartilhar dados" id="" class="">compartilhar meus dados com parceiros para ter <br>
+                conteúdos personalizados,veja <a href="dados.html" target="_blank">como funciona</a>
+            </div>
+            
         </div>
         <!--fecha senha-->
         <!--abre botão-->
         <div>
-            <center>
-                <button type="submit">criar cadastro</button>
-            </center>
+            <button type="submit">criar cadastro</button>
         </div>
         <!--fecha botão-->
         <!--segurança-->
         <div>
-            <center>
-                <p>Não se preocupe, nosso site é seguro! Ao criar o <br>
-                seu cadastro, você concorda com a nossa <a href="politica.html">política de privacidade</a>
-            </center>
+            <p>Não se preocupe, nosso site é seguro! Ao criar o <br>
+            seu cadastro, você concorda com a nossa <a href="politica.html">política de privacidade</a>
         </div>
     </form>
 </section>
